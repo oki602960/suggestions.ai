@@ -1,0 +1,2 @@
+- [Adding a provider in connect.go](provider-wiring-pattern.md) — new providers need wiring in 4 places: prefix detection, non-streaming, streaming+tools, streaming-no-tools, plus /v1/models.
+- [go build flakiness](go-build-git-lock.md) — first `go build ./...` attempt sometimes fails with a git index.lock error unrelated to code; retry once.

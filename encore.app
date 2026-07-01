@@ -1,0 +1,3 @@
+{
+  "id": "openai-ollama-proxy"
+}
