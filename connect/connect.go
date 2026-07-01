@@ -241,9 +241,9 @@ func Connect(w http.ResponseWriter, req *http.Request) {
         if isMistral {
                 displayName = mistral.DisplayModel
         } else if isOpenRouter {
-                displayName = "Tencent-Hy3"
+                displayName = "Tencent-Suggestions"
         } else if isSambaNova {
-                displayName = "DeepSeek-V3.2"
+                displayName = "DeepSeek-Suggestions"
         } else {
                 displayName = ollama.DisplayModel
         }
@@ -964,13 +964,13 @@ func Models(w http.ResponseWriter, req *http.Request) {
                                 OwnedBy: "mistral",
                         },
                         {
-                                ID:      "Tencent-Hy3",
+                                ID:      "Tencent-Suggestions",
                                 Object:  "model",
                                 Created: 1700000002,
                                 OwnedBy: "openrouter",
                         },
                         {
-                                ID:      "DeepSeek-V3.2",
+                                ID:      "DeepSeek-Suggestions",
                                 Object:  "model",
                                 Created: 1700000003,
                                 OwnedBy: "sambanova",
