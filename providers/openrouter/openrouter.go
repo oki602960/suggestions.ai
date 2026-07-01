@@ -41,7 +41,7 @@ const (
 // ── Model mapping ─────────────────────────────────────────────────────────────
 
 var nvidiaModels = map[string]string{
-        "Tencent-Hy3": "tencent/hy3-preview",
+        "Tencent-Suggestions": "tencent/hy3-preview",
 }
 
 // ResolveModel returns the upstream OpenRouter model ID for a display name.
