@@ -37,7 +37,7 @@ func NextKey() string {
 const (
 	BaseURL      = "https://api.mistral.ai/v1/chat/completions"
 	Model        = "mistral-small-2603"
-	DisplayModel = "Mistral-Small-4"
+	DisplayModel = "Mistral-Suggestions"
 )
 
 // ── Types ─────────────────────────────────────────────────────────────────────
