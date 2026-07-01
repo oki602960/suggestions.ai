@@ -45,7 +45,7 @@ const (
 // ── Model mapping ─────────────────────────────────────────────────────────────
 
 var sambaModels = map[string]string{
-	"DeepSeek-V3.2": "DeepSeek-Suggestions",
+	"DeepSeek-Suggestions": "DeepSeek-V3.2",
 }
 
 // ResolveModel returns the upstream SambaNova model ID for a display name.
