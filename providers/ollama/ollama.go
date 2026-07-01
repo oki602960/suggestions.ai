@@ -47,7 +47,7 @@ func NextKey() string {
 const (
         BaseURL      = "https://ollama.com/api/chat"
         Model        = "gemma4:31b"
-        DisplayModel = "Gemma-4"
+        DisplayModel = "Gemma-Suggestions"
 )
 
 // ── Types ─────────────────────────────────────────────────────────────────────
