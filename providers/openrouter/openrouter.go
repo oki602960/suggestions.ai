@@ -36,12 +36,13 @@ func NextKey() string {
 
 const (
         nvidiaBaseURL = "https://openrouter.ai/api/v1/chat/completions"
+        DisplayModel  = "Tencent-Suggestions"
 )
 
 // ── Model mapping ─────────────────────────────────────────────────────────────
 
 var nvidiaModels = map[string]string{
-        "Tencent-Suggestions": "tencent/hy3-preview",
+        DisplayModel: "tencent/hy3-preview",
 }
 
 // ResolveModel returns the upstream OpenRouter model ID for a display name.
