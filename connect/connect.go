@@ -230,7 +230,7 @@ func Connect(w http.ResponseWriter, req *http.Request) {
         }
 
         isMistral := strings.HasPrefix(strings.ToLower(incoming.Model), "mistral")
-        isOpenRouter := strings.HasPrefix(strings.ToLower(incoming.Model), "tencent")
+        isOpenRouter := false
         isSambaNova := strings.HasPrefix(strings.ToLower(incoming.Model), "deepseek")
 
         allTools := append(incoming.Tools, getRegisteredToolDefs()...)
@@ -962,12 +962,6 @@ func Models(w http.ResponseWriter, req *http.Request) {
                                 Object:  "model",
                                 Created: 1700000001,
                                 OwnedBy: "mistral",
-                        },
-                        {
-                                ID:      openrouter.DisplayModel,
-                                Object:  "model",
-                                Created: 1700000002,
-                                OwnedBy: "openrouter",
                         },
                         {
                                 ID:      sambanova.DisplayModel,
